@@ -68,9 +68,31 @@ There are three convolutional layers in the SRCNN model. We apply the ReLU activ
 
 ## Le débruitage d’images par patchs :
 
+## Comment entraîner le modèle pour la Super resolution
+In image super-resolution, we need to feed a blurry image and clean high-resolution to the neural network. The blurry image acts as the input data and the high-resolution image acts as the input label. With each iteration, the deep neural network tries to make the blurry images look more and more like the high-resolution images. The common technique to test the similarity between the two images is PSNR (Peak Signal to Noise Ratio).
 
+The higher the PSNR, the better and more high-resolution images we get from the low-resolution images. It is calculated in dB.
 
+Dans la super resolution d'image, on doit fournire en entrée des images floues et des images net au réseau :
+- Les images floues seront l'entrée du modèle
+- Les images net seront les labels
 
+A chaques itteration, le modèle va tenter de recréer les images net à partir des images floues.
+La technique généralement utilisée pour tester la similarité entre deux images est le PSNR (Peak Signal to Noise Ratio).
+
+Plus le PSNR est important, meilleur est la prédiction (image reconstruite).
+Le PSNR est calculé en dB.
+
+## La fonction de perte
+Nous allons utiliser la même fonction de perte que dans l'article qui est MSE pour Mean Square Error.
+La formule de la fonction de perte est :
+
+$L(Θ)=\frac{1}{n}∑i=1n∥|F(Y_i;Θ),X_i||^2$
+
+Avec :
+- $Y_i La sous image floue
+- $X_i La sous image net
+- n le nombre d'exemples d'entraînement
 
 
 
