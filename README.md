@@ -62,11 +62,13 @@ Pour cela, nous allons utiliser l'architecture du SRCNN de https://arxiv.org/pdf
 <img width="556" alt="SRCNN_architecture" src="https://github.com/user-attachments/assets/2523e7cf-8cf7-469a-9801-2450c8baf1b8" />
 
 Figure 1 shows the different kernels/filters of the SRCNN architecture. You can see that there are three layers.
-Figure 2 shows the patch extraction process that is done by the SRCNN model. => 
+Figure 2 shows the patch extraction process that is done by the SRCNN model.
 
-There are three convolutional layers in the SRCNN model. We apply the ReLU activation to the first two convolutional layers only.
+There are three convolutional layers in the SRCNN model. We apply the ReLU activation to the first two convolutional layers only.*
 
-To get an in-depth explanation of the architecture, I recommend that you read the original paper.
+## Le débruitage d’images par patchs :
+
+
 
 
 
