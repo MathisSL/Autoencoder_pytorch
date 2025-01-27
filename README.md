@@ -55,7 +55,7 @@ The loss function measures the difference between the input and the reconstructe
 - Mean Squared Error (MSE) for continuous data.
 - Binary Cross-Entropy (BCE) for binary or probabilistic outputs.
 
-# Super résolution autoencoder$
+# Super résolution autoencoder
 Pour le projet, j'ai décider d'entraîner un autoencoder permettant d'améliorer la qualité des images.
 
 Pour cela, nous allons utiliser l'architecture du SRCNN de https://arxiv.org/pdf/1501.00092v3
@@ -90,8 +90,8 @@ La formule de la fonction de perte est :
 $L(Θ)=\frac{1}{n}∑i=1n∥|F(Y_i;Θ),X_i||^2$
 
 Avec :
-- $Y_i La sous image floue
-- $X_i La sous image net
+- $Y_i$ La sous image floue
+- $X_i$ La sous image net
 - n le nombre d'exemples d'entraînement
 
 
