@@ -95,6 +95,13 @@ Avec :
 - n le nombre d'exemples d'entraînement
 
 
+------
 
+# Seq2Seq Encoder Decoder
+Code : https://github.com/bentrevett/pytorch-seq2seq/blob/rewrite/1%20-%20Sequence%20to%20Sequence%20Learning%20with%20Neural%20Networks.ipynb
 
+![ed1](https://github.com/user-attachments/assets/89443f88-e8ad-4d20-8159-01e40ff66b00)
 
+![ed2](https://github.com/user-attachments/assets/94353cd0-8417-4e76-ac9e-679eeca00391)
+
+![ed3](https://github.com/user-attachments/assets/41e10d5e-f93a-485d-aa87-d6eca5d37cdc)
